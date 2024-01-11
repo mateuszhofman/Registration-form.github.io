@@ -1,1 +1,1 @@
-live: https://mateuszhofman.github.io/Registration-form.github.io/
+Live: https://mateuszhofman.github.io/Registration-form.github.io/
