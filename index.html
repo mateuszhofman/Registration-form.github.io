@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6ec79b24d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form-box">
+            <form>
+                <h1>Registration form</h1>
+                <div class="form-item">
+                    <label for="username"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="username" placeholder="Username">
+                    <p class="error-text">error</p>
+                </div>
+                <div class="form-item">
+                    <label for="password"><i class="fa-solid fa-unlock"></i><i class="fa-solid fa-eye show-password"></i></label>
+                    <input type="password" id="password" placeholder="Password">
+                    <p class="error-text">error</p>
+                </div>
+                <div class="form-item">
+                    <label for="password2"><i class="fa-solid fa-lock"></i><i class="fa-solid fa-eye show-password2"></i></label>
+                    <input type="password" id="password2" placeholder="Confirm Password">
+                    <p class="error-text">error</p>
+                </div>
+                <div class="form-item">
+                    <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" id="email" placeholder="Email address">
+                    <p class="error-text">error</p>
+                </div>
+                <div class="control-buttons">
+                    <button class="clear">Clear</button>
+                    <button class="send">Send</button>
+                </div>
+                <div class="popup">
+                    <p>Your registration was successfull!</p>
+                    <button class="close">Close</button>
+                </div>
+            </form>
+        </div>
+        <div class="img-box">
+            <img src="./img/mountains.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
+

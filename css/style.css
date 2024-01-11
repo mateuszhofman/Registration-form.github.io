@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #596f7d;
+}
+.wrapper {
+	display: flex;
+	position: relative;
+	box-shadow: 0 0 10px #000;
+	border-radius: 15px;
+}
+
+.form-box {
+	display: flex;
+	width: 440px;
+	border-radius: 15px 0 0 15px;
+	color: #fef5f6;
+	background-color: #1b1e31;
+}
+
+.img-box img {
+	width: 500px;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+}
+
+form {
+	padding: 50px;
+	font-size: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-item {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.form-item i {
+	position: absolute;
+	top: 15px;
+	left: 22px;
+	font-size: 24px;
+}
+.form-item .show-password,
+.form-item .show-password2 {
+	left: 294px;
+}
+
+.form-item input {
+	width: 100%;
+	padding: 20px 64px;
+	font-size: 16px;
+	border: none;
+	border-radius: 15px;
+	background-color: #31374d;
+}
+
+.form-item.error input {
+	border: 1px solid rgb(0, 137, 250);
+	background-color: rgba(0, 137, 250, 0.1);
+}
+
+.form-item .error-text {
+	visibility: hidden;
+	margin: 5px 0 0 10px;
+	font-size: 14px;
+	color: rgb(0, 137, 250);
+}
+
+.form-item.error .error-text {
+	visibility: visible;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.send,
+.clear,
+.close {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 100px;
+	font-size: 18px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	color: #fef5f6;
+	background-color: #e39980;
+	transition: background-color 0.3s;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover {
+	background-color: #c36545;
+}
+
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 200px;
+	background-color: #31374d;
+	border-radius: 8px;
+	border: 2px solid black;
+	transition: top 0.5s;
+	visibility: hidden;
+}
+
+.popup p {
+	font-size: 28px;
+}
+
+.popup button {
+	margin-top: 20px;
+}
+
+.show-popup {
+	top: 150px;
+	visibility: visible;
+}
